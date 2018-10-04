@@ -1,0 +1,38 @@
+body
+{
+    background-image: url('../images/bg.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #582d40;
+}
+
+.overlay
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.status-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    border-bottom: 6px solid #4dc3db;
+}
+
+@media (max-width: 500px) {
+    .status-text {
+        font-size: 2rem;
+        border-bottom-width: 4px;
+    }
+}
+
+@media (max-height: 500px) {
+    body {
+        background-image: none;
+    }
+}
